@@ -14,7 +14,7 @@
 // pin configuration for SX1276 radio module
 struct lorawan_sx1276_settings sx1276_settings = {
     .spi = {
-        .inst = PICO_DEFAULT_SPI_INSTANCE, // RP2040 SPI instance
+        .inst = PICO_DEFAULT_SPI_INSTANCE(), // RP2040 SPI instance
         .mosi = PICO_DEFAULT_SPI_TX_PIN,   // SPI MOSI GPIO
         .miso = PICO_DEFAULT_SPI_RX_PIN,   // SPI MISO GPIO
         .sck = PICO_DEFAULT_SPI_SCK_PIN,   // SPI SCK GPIO
