@@ -95,7 +95,7 @@ target_include_directories(pico_loramac_node INTERFACE
     ${LORAMAC_NODE_PATH}/src/system
 )
 
-target_link_libraries(pico_loramac_node INTERFACE pico_stdlib pico_unique_id hardware_spi)
+target_link_libraries(pico_loramac_node INTERFACE pico_stdlib pico_unique_id hardware_spi hardware_pwm)
 
 target_compile_definitions(pico_loramac_node INTERFACE -DSOFT_SE)
 target_compile_definitions(pico_loramac_node INTERFACE -DREGION_EU868)
@@ -127,3 +127,5 @@ add_subdirectory("examples/erase_nvm")
 add_subdirectory("examples/hello_abp")
 add_subdirectory("examples/hello_otaa")
 add_subdirectory("examples/otaa_temperature_led")
+
+add_subdirectory("examples/miut_otaa")
