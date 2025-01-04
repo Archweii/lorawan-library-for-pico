@@ -46,7 +46,7 @@
 /*!
  * LoRaWAN default end-device class
  */
-#define LORAWAN_DEFAULT_CLASS CLASS_A
+#define LORAWAN_DEFAULT_CLASS CLASS_C
 
 /*!
  * LoRaWAN Adaptive Data Rate
@@ -130,6 +130,7 @@ static LmHandlerCallbacks_t LmHandlerCallbacks = {
     .OnJoinRequest = OnJoinRequest,
     .OnTxData = OnTxData,
     .OnRxData = OnRxData,
+    .OnClassChange= OnClassChange,
     .OnClassChange = OnClassChange,
     .OnBeaconStatusChange = OnBeaconStatusChange,
     .OnSysTimeUpdate = OnSysTimeUpdate,

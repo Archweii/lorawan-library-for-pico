@@ -5,6 +5,7 @@
         "memory": "c",
         "optional": "c",
         "config.h": "c",
-        "sx126x-board.h": "c"
+        "sx126x-board.h": "c",
+        "regioncommon.h": "c"
     }
 }
