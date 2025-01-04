@@ -227,7 +227,7 @@ int main(void)
             printf("received a %d byte message on port %d: ", receive_length, receive_port);
 
             // Blink POWER led for status
-            pwm_set_rgbw(COLOR_BLUE);
+            pwm_set_rgbw(COLOR_GREEN);
             lorawan_process_timeout_ms(100);
             pwm_set_rgbw(COLOR_BLACK);
 

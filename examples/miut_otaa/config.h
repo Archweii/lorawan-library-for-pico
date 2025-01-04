@@ -18,7 +18,7 @@
 
 // Custom own program
 #define LED_RED         12
-#define LED_GREEN       13
+#define LED_GREEN       0
 #define LED_BLUE        14
 #define LED_WHITE       15
 
