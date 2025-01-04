@@ -44,9 +44,8 @@ void GpioMcuWrite(Gpio_t *obj, uint32_t value) { gpio_put(obj->pin, value); }
 
 uint32_t GpioMcuRead(Gpio_t *obj) { return gpio_get(obj->pin); }
 
-void GpioMcuSetInterrupt( Gpio_t *obj, IrqModes irqMode, IrqPriorities irqPriority, GpioIrqHandler *irqHandler )
-{
-  //gpio_set_irq_enabled_with_callback(obj->pin, GPIO_IRQ_EDGE_RISE, true, irqHandler);
+void GpioMcuSetInterrupt( Gpio_t *obj, IrqModes irqMode, IrqPriorities irqPriority, GpioIrqHandler *irqHandler ) {
+  gpio_set_irq_enabled_with_callback(obj->pin, GPIO_IRQ_EDGE_RISE, true, irqHandler);
 }
 
 void GpioMcuRemoveInterrupt(Gpio_t *obj) {
