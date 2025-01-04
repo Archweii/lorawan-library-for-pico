@@ -5,7 +5,7 @@
  * §
  */
 
-#define LORAWAN_DEFAULT_CLASS   CLASS_C
+#define LORAWAN_DEFAULT_CLASS   CLASS_A
 
 // LoRaWAN region to use, full list of regions can be found at: 
 //   http://stackforce.github.io/LoRaMac-doc/LoRaMac-doc-v4.5.1/group___l_o_r_a_m_a_c.html#ga3b9d54f0355b51e85df8b33fd1757eec
@@ -24,7 +24,7 @@
 // for the region
 #define LORAWAN_CHANNEL_MASK    NULL
 
-#define LORAWAN_PUBLIC_NETWORK  false
+#define LORAWAN_PUBLIC_NETWORK  true
 
 
 // Custom own program

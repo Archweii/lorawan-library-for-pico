@@ -14,22 +14,26 @@
 
 #include "pico/stdlib.h"
 #include "pico/lorawan.h"
+#include "pico/board-config.h"
 #include "tusb.h"
 
 // edit with LoRaWAN Node Region and OTAA settings
 #include "config.h"
 
-// pin configuration for SX1262 radio module
+// pin configuration for SX126x radio modules
 const struct lorawan_sx126x_settings sx126x_settings = {
     .spi = {
-        .inst = PICO_DEFAULT_SPI_INSTANCE(),
-        .mosi = PICO_DEFAULT_SPI_TX_PIN,
-        .miso = PICO_DEFAULT_SPI_RX_PIN,
-        .sck = PICO_DEFAULT_SPI_SCK_PIN,
-        .nss = 8
+        .inst   = spi0,
+        .mosi   = RADIO_MOSI,
+        .miso   = RADIO_MISO,
+        .sck    = RADIO_SCLK,
+        .nss    = RADIO_NSS
     },
-    .reset = 9,
-    .dio1 = 10
+
+    .reset  = RADIO_RESET,
+    .busy   = RADIO_BUSY,
+    // sx127x would use dio0 pin, and sx126x dont use it 
+    .dio1   = RADIO_DIO_1
 };
 
 // OTAA settings

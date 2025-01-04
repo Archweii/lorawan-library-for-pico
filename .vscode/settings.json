@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "any": "c",
+        "memory": "c",
+        "optional": "c",
+        "config.h": "c",
+        "sx126x-board.h": "c"
+    }
+}
