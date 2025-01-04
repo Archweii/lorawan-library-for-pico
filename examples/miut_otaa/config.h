@@ -2,23 +2,23 @@
  * Copyright (c) 2021 Arm Limited and Contributors. All rights reserved.
  *
  * SPDX-License-Identifier: BSD-3-Clause
- * 
+ * §
  */
 
 #define LORAWAN_DEFAULT_CLASS   CLASS_C
 
 // LoRaWAN region to use, full list of regions can be found at: 
 //   http://stackforce.github.io/LoRaMac-doc/LoRaMac-doc-v4.5.1/group___l_o_r_a_m_a_c.html#ga3b9d54f0355b51e85df8b33fd1757eec
-#define LORAWAN_REGION          LORAMAC_REGION_AU915
+#define LORAWAN_REGION          LORAMAC_REGION_EU868
 
 // LoRaWAN Device EUI (64-bit), NULL value will use Default Dev EUI
-#define LORAWAN_DEVICE_EUI      "5919da448c0bb6ab"
+#define LORAWAN_DEVICE_EUI      "f7b028754dd20a0b"
 
 // LoRaWAN Application / Join EUI (64-bit)
-#define LORAWAN_APP_EUI         "7dddb8bff45b9151"
+#define LORAWAN_APP_EUI         "7e1216f1089d938e"
 
 // LoRaWAN Application Key (128-bit)
-#define LORAWAN_APP_KEY         "f89f29895fb953a01bf79ff6efb630d4"
+#define LORAWAN_APP_KEY         "5b631879f25e0b4a2b62a6faf2eff686"
 
 // LoRaWAN Channel Mask, NULL value will use the default channel mask 
 // for the region
